@@ -9,14 +9,18 @@
 
 </head>
 <body>
-	<h1> Basic Calculator</h1> 
+	<h1> Basic Calculator</h1>
+	<h1>Do not divide by 0</h1>
+	
+
 	<br>
 	<form id="form" Name="calci">
 		<input name="display" style="width: 565px;height: 100px;background-color: skyblue;text-align: right;cursor:default;"><br>
 		<input type="button" value="0" onclick="calci.display.value+='0'">
 		<input type="button" value="1" onclick="calci.display.value+='1'">
 		<input type="button" value="2" onclick="calci.display.value+='2'">
-		<input type="button" value="+"  onclick="calci.display.value+='+'" style="background-color:#1eeb52;"><br>
+		<input type="button" value="C"  onclick="calci.display.value=''" style="background-color: red;"><br>
+		
 		<input type="button" value="3"  onclick="calci.display.value+='3'">
 		<input type="button" value="4"  onclick="calci.display.value+='4'">
 		<input type="button" value="5"  onclick="calci.display.value+='5'">
@@ -26,10 +30,11 @@
 		<input type="button" value="8"  onclick="calci.display.value+='8'">
 		<input type="button" value="&#215;"  onclick="calci.display.value+='*'" style="background-color: maroon;"><br>
 		<input type="button" value="9"  onclick="calci.display.value+='9'">
-		<!--adding additional feature in your calculator.-->
-		<input type="button" value="/"  onclick="calci.display.value+='/'" style="background-color:grey;"><br>
-		<input type="button" value="%"  onclick="calci.display.value+='%'" style="background-color:pink;"><br>
-		<input type="button" value="C"  onclick="calci.display.value=''" style="background-color: red;">
+		<!--I removed break line which unusually shifted button to next row with out competing the space -->
+		<input type="button" value="/"  onclick="calci.display.value+='/'" style="background-color:grey;">
+		<input type="button" value="%"  onclick="calci.display.value+='%'" style="background-color:pink;">
+		<input type="button" value="+"  onclick="calci.display.value+='+'" style="background-color:#1eeb52;">
+
 		<input type="button" value="="  onclick="calci.display.value=eval(calci.display.value)" style="background-color: green;">
 		<input type="button" value="&#247"  onclick="calci.display.value+='/'" style="background-color: yellow;">
 
